@@ -6,6 +6,8 @@ defmodule Test.Server do
   end
 
   def init([]) do
+    :hmac.hmac256("BAR", "FOO")
+
     { :ok, [] }
   end
 
